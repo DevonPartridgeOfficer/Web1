@@ -20,6 +20,14 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.tree{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading {
@@ -56,15 +64,14 @@ body {
 }
 
 .reservations ul{
-    /*Display added temporarily, will need to change after next class*/
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
     list-style: none;
 }
 
 .reservations ul li{
     padding: 30px;
-    /*Width added temporarily, will need to change after next class*/
-    width: 25%;
     border: 1px solid #53624E;
     text-align: center;
     position: relative;
@@ -83,7 +90,7 @@ body {
     display: none;
 }
 
-/*Temporary hover for calendar*/
+/*Temporary hover for calendar -- change to click with js*/
 .Llegada:hover .calendar{
     display: block;
 }
