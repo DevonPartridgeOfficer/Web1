@@ -30,6 +30,11 @@ body {
     margin-right: auto;
 }
 
+.menu{
+    padding-left: 30px;
+    font-size: 32px;
+}
+
 .heading {
     margin-top: 120px;
     font-size: 70px;
@@ -48,6 +53,7 @@ body {
     text-transform: lowercase;
     font-style: italic;
 }
+
 
 .reserveButton, 
 .reservations{
@@ -99,3 +105,19 @@ img{
     width: 100%;
 }
 
+
+@media (max-width: 860px) {
+    .tree{
+        /*Hides element but is still there to allow flex/grid*/
+        visibility: hidden;
+    }
+
+    .heading div{
+        font-size: 8vw;
+    }
+
+    .reservations{
+        /*Hides elements completely and allows page to flow*/
+        display: none;
+    }
+}
