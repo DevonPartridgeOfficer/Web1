@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-bg-colour: #E0E1DF;
+    --main-brand-colour: #53624E;
+    --padding-side: 140px;
+}
+
 body {
-    background: #E0E1DF;
-    padding: 40px;
+    background: var(--main-bg-colour);
+    padding: 40px var(--padding-side);
 }
 
 .main{
-    color: #53624E;
+    color: var(--main-brand-colour);
 }
 
 .navBar{
-    background: #E0E1DF;
+    background: var(--main-bg-colour);
     position: fixed;
     top:0;
     left: 0;
@@ -22,7 +28,15 @@ body {
     z-index: 9999;
     display: flex;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px var(--padding-side);
+    opacity: 1;
+    transition: opacity 1s linear, top 1s linear;
+}
+
+/*To add .scroll with js*/ 
+.navBar .scroll{
+    top: -100%;
+    opacity: 0;
 }
 
 .tree{
@@ -40,13 +54,14 @@ body {
     font-size: 70px;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 1px solid #53624E;
+    border-bottom: 1px solid var(--main-brand-colour);
     margin-bottom: 40px;
 }
 
 .heading div{
-    border-top: 1px solid #53624E;
+    border-top: 1px solid var(--main-brand-colour);
     padding: 20px;
+    font-size: 7vw;
 }
 
 .heading div span{
@@ -62,11 +77,11 @@ body {
 
 .reserveButton{
     text-transform: uppercase;
-    color: #E0E1DF;
-    background: #53624E;
+    color: var(--main-bg-colour);
+    background: var(--main-brand-colour);
     padding: 20px 30px;
     display: inline-block;
-    border: 1px solid #53624E;
+    border: 1px solid var(--main-brand-colour);
 }
 
 .reservations ul{
@@ -78,14 +93,14 @@ body {
 
 .reservations ul li{
     padding: 30px;
-    border: 1px solid #53624E;
+    border: 1px solid var(--main-brand-colour);
     text-align: center;
     position: relative;
 }
 
 .calendar{
-    background: #E0E1DF;
-    border: 1px solid #53624E;
+    background: var(--main-bg-colour);
+    border: 1px solid var(--main-brand-colour);
     position: absolute;
     height: 300px;
     width: 200%;
@@ -94,6 +109,13 @@ body {
     right: 0;
     z-index: 1;
     display: none;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+/* To be added with js  */
+.calendar .active{
+    opacity: 1;
 }
 
 /*Temporary hover for calendar -- change to click with js*/
@@ -110,10 +132,6 @@ img{
     .tree{
         /*Hides element but is still there to allow flex/grid*/
         visibility: hidden;
-    }
-
-    .heading div{
-        font-size: 8vw;
     }
 
     .reservations{
