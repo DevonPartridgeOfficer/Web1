@@ -4,15 +4,30 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #f5f5f3;
-    padding: 40px;
+:root{
+    --main-back-colour: #f5f5f3;
+    --border-colour: 1px solid #c6c6c6;
+    --padding-side: 30px;
+    --max-width: 100%;
 }
 
-.navbar li{
-    display: inline-flex;
+body {
+    background: var(--main-back-colour);
+    padding: var(--padding-side);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 10px;
+}
+
+nav li{
+    display: inline-flex;
     list-style: none;
+    padding: 0px 0px 10px 10px;
 }
 
 .logo{
@@ -21,9 +36,11 @@ body {
 }
 
 .tips{
-    padding: 10px;
-    border-top: 1px solid #c6c6c6;
-    border-bottom: 1px solid #c6c6c6;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top: var(--border-colour);
+    border-bottom: var(--border-colour);
 }
 
 div.tips{
@@ -31,13 +48,20 @@ div.tips{
 }
 
 
-.imageTempContain{
+.mainImagesTop{
     display: flex;
-    padding: 10px 0px;
-    border-bottom: 1px solid #c6c6c6;
+    flex-flow: row nowrap;
+    width: var(--max-width);
+    padding: 15px 0px;
+    border-bottom: var(--border-colour);
+    display: grid;
 }
 
-.imgTemp{
-    width: 50%;
-    height: 50%;
+.imagesize{
+    width:100px;
+    height: 100px;
+}
+
+.medText{
+    font-size: 2rem;
 }
