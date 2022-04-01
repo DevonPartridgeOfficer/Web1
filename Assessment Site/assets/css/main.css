@@ -1,3 +1,8 @@
+/* Need to apply spacing and borders consistent over all 'sections' */
+/* section{padding: var(--spacing) 0}; */
+
+/* Change different sized fonts to h1/h2 tags */
+
 *{
     margin: 0;
     padding: 0;
@@ -53,7 +58,11 @@ div.tips{
     font-size: 2rem;
 }
 
-.parent{
+.largeText{
+    font-size: 3.5rem;
+}
+
+.col2parent{
     display:grid;
     height:100%;
     width: 100%;
@@ -66,6 +75,7 @@ div.tips{
     grid-row:1 / 5;
     margin-right: 15px;
 }
+
 
 .row_span2{
     grid-row:1 / 3;
@@ -88,4 +98,39 @@ div.tips{
     width: 100%;
     max-height: 75vh;
 }
+
+.col3parent{
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    padding: var(--spacing) 0;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: var(--border);
+}
+
+.row_span3{
+    grid-row:1 / 4;
+    margin-right: 10px;
+}
+
+.virtualTryOn{
+    padding: var(--spacing) 0;
+    /* Temporary Bottom padding - replace with content */
+    padding-bottom: 100px;
+    border-bottom: var(--border);
+}
+
+.fact{
+    padding: var(--spacing) 0;
+    /* Temp padding */
+    padding-bottom: 200px;
+    border-bottom: var(--border);
+}
+
+/* Temp */
+.fact p{
+    font-size: 5rem;
+}
+
 
