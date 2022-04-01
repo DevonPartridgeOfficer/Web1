@@ -6,9 +6,10 @@
 
 :root{
     --main-back-colour: #f5f5f3;
-    --border-colour: 1px solid #c6c6c6;
+    --border: 1px solid #c6c6c6;
     --padding-side: 30px;
     --max-width: 100%;
+    --spacing: 15px;
 }
 
 body {
@@ -38,9 +39,9 @@ nav li{
 .tips{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px;
-    border-top: var(--border-colour);
-    border-bottom: var(--border-colour);
+    padding: var(--spacing) 0px;
+    border-top: var(--border);
+    border-bottom: var(--border);
 }
 
 div.tips{
@@ -48,20 +49,43 @@ div.tips{
 }
 
 
-.mainImagesTop{
-    display: flex;
-    flex-flow: row nowrap;
-    width: var(--max-width);
-    padding: 15px 0px;
-    border-bottom: var(--border-colour);
-    display: grid;
-}
-
-.imagesize{
-    width:100px;
-    height: 100px;
-}
-
 .medText{
     font-size: 2rem;
 }
+
+.parent{
+    display:grid;
+    height:100%;
+    width: 100%;
+    padding: var(--spacing) 0;
+    grid-template-columns:1fr 1fr;
+    border-bottom: var(--border);
+}
+
+.row_span{
+    grid-row:1 / 5;
+    margin-right: 15px;
+}
+
+.row_span2{
+    grid-row:1 / 3;
+}
+
+.parent4{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.shrink{
+    object-fit: cover;
+    width: 100%;
+    max-height: 85vh;
+}
+
+
+.shrink2{
+    object-fit: cover;
+    width: 100%;
+    max-height: 75vh;
+}
+
