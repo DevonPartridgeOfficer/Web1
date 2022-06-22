@@ -1,5 +1,3 @@
-/* Need to apply spacing and borders consistent over all 'sections' */
-/* section{padding: var(--spacing) 0}; */
 
 /* Change different sized fonts to h1/h2 tags */
 
@@ -17,7 +15,7 @@
     --spacing: 15px;
 }
 
-body {
+body{
     background: var(--main-back-colour);
     padding: var(--padding-side);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +25,8 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 10px !important;
 }
 
 nav li{
@@ -36,9 +35,12 @@ nav li{
     padding: 0px 0px 10px 10px;
 }
 
+.pageLinks{
+    padding-left: 100px;
+}
+
 .logo{
     width: 5%;
-    height:auto;
 }
 
 .tips{
@@ -124,13 +126,32 @@ div.tips{
 .fact{
     padding: var(--spacing) 0;
     /* Temp padding */
-    padding-bottom: 200px;
+    padding-bottom: 350px;
     border-bottom: var(--border);
+}
+
+.fact p{
+    width: 80%;
+    font-size: 5.5rem;
 }
 
 /* Temp */
 .fact p{
-    font-size: 5rem;
+    font-size: 7rem;
 }
+
+footer{
+    background-color: #c4c4c4;
+}
+
+.footerColumns{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul{
+    list-style: none;
+}
+
 
 
