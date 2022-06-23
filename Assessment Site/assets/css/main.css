@@ -16,10 +16,18 @@
     --spacing: 15px;
 }
 
-main{
+header{
     background: var(--main-back-colour);
     padding: var(--padding-side);
     padding-bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+main{
+    background: var(--main-back-colour);
+    padding: var(--padding-side);
+    padding-top: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
