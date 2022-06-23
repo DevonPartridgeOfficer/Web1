@@ -49,6 +49,12 @@ section{
     max-height: 75vh;
 }
 
+.shrink3{
+    object-fit: cover;
+    width: 100%;
+    height: 62vh;
+}
+
 /*Navigation/Header Styles*/
 .logo{
     width: 5%;
@@ -76,6 +82,26 @@ nav li{
     justify-content: space-between;
 }
 
+/*Grid Row Heights*/ 
+.fullRowHeight{
+    grid-row:1 / 5;
+
+}
+
+.smallRowHeight{
+    grid-row:1 / 3;
+}
+
+.midRowHeight{
+    grid-row:1 / 4;
+}
+
+/*Grid Direction Change*/
+.reverse{
+    grid-auto-flow: dense;
+    direction: rtl;
+}
+
 /*2 Columns Layout*/
 .columns2Parent{
     display:grid;
@@ -85,52 +111,43 @@ nav li{
     grid-gap: 15px;
 }
 
-.fullRowHeight{
-    grid-row:1 / 5;
-
-}
-
-.midRowHeight{
-    grid-row:1 / 3;
-}
-
-.col3parent{
+/*3 Columns Layout*/
+.column3Parent{
     display:grid;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: var(--spacing) 0;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
 }
 
-.row_span3{
-    grid-row:1 / 4;
-    margin-right: 10px;
+.column3Parent div{
+    padding-bottom: 10px;
 }
 
-.fact{
-    padding: var(--spacing) 0;
-    /* Temp padding */
+/*Large fact by itself*/
+.largeFact{
     padding-bottom: 350px;
 }
 
-.fact p{
+.largeFact p{
     width: 80%;
-    font-size: 5.5rem;
-}
-
-/* Temp */
-.fact p{
     font-size: 7rem;
 }
 
+/*Footer Styles*/
 footer{
     background-color: #c4c4c4;
+    padding: var(--padding-side) 0;
 }
 
-.footerColumns{
+.footerColumnsParent{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+    width: 100%;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 15px;
 }
 
 footer ul{
