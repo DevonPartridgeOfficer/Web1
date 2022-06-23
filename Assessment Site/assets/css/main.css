@@ -16,7 +16,7 @@
     --spacing: 15px;
 }
 
-body{
+main{
     background: var(--main-back-colour);
     padding: var(--padding-side);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -139,11 +139,12 @@ nav li{
 footer{
     background-color: #c4c4c4;
     padding: var(--padding-side) 0;
+    margin: 0 !important;
 }
 
 .footerColumnsParent{
     display:grid;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
