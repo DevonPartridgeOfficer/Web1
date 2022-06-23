@@ -36,7 +36,8 @@ section:not(:first-child){
 }
 
 .largeText{
-    font-size: 3.5rem;
+    font-size: 3rem;
+    width: 85%;
 }
 
 /*Change Image size*/
@@ -213,12 +214,48 @@ footer ul{
 }
 
 @media (max-width: 900px){
-    .medText{
-        font-size: 1.5rem;
+    .column3Parent:first-child{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        height: var(--max-height);
+        grid-auto-flow: row;
     }
+
+    .column3Parent{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width:100%;
+    }
+
     .logo svg{
         width: 30%;
     }
+
+    .medText{
+        font-size: 1.5rem;
+    }
+    
+    .largeText{
+        font-size: 1.5rem;
+    }
+
+    /*Change Image size*/
+    .shrink{
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .shrink2{
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .shrink3{
+        width: 100%;
+        max-height: 100%;
+    }
+
+
 }
 
 @media (max-width: 600px){
@@ -235,6 +272,11 @@ footer ul{
 
     .pageLinks{
         display: none;
+    }
+    
+    .largeText{
+        font-size: 2rem;
+        width: 85%;
     }
 }
 
