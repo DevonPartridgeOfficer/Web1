@@ -173,6 +173,11 @@ nav li{
     padding-bottom: 10px;
 }
 
+/*Virtual Try On Section*/
+.tryOn{
+    padding-bottom: 100px;
+}
+
 /*Large fact by itself*/
 .largeFact{
     padding-bottom: 350px;
@@ -262,6 +267,10 @@ footer ul{
         width: 100%;
         max-height: 100%;
     }
+
+    .tryOn{
+    padding-bottom: 10px;
+}
 
 
 }
