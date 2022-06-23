@@ -59,6 +59,13 @@ section:not(:first-child){
     max-height: 62vh;
 }
 
+img{
+    transition: 0.1s linear;
+}
+img:hover{
+    transform: scale(0.98);
+}
+
 /*Button/Link styles*/
 button{
     display: flex;
@@ -93,6 +100,7 @@ header{
     padding: var(--padding-side);
     border-bottom: var(--border);
     padding-bottom: 0;
+    z-index: 1000;
 }
 
 nav {
