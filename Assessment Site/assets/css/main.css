@@ -44,19 +44,19 @@ section:not(:first-child){
 .shrink{
     object-fit: cover;
     width: var(--max-width);
-    max-height: 85vh;
+    height: 85vh;
 }
 
 .shrink2{
     object-fit: cover;
     width: var(--max-width);
-    max-height: 75vh;
+    height: 70vh;
 }
 
 .shrink3{
     object-fit: cover;
     width: var(--max-width);
-    max-height: 62vh;
+    height: 62vh;
 }
 
 img{
@@ -150,7 +150,7 @@ nav li{
     direction: rtl;
 }
 
-/*2 Columns Layout*/
+/*2 Colums Layout*/
 .columns2Parent{
     display:grid;
     height:100%;
@@ -194,6 +194,11 @@ footer{
     margin: 0 !important;
 }
 
+footer img{
+    object-fit:fill;
+    width: var(--max-width);
+    height: 50%;
+}
 .footerColumnsParent{
     display:grid;
     height: 55vh;
