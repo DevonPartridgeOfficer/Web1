@@ -13,7 +13,7 @@ Using node.js
 ```bash
 npm start
 ```
-From here navigate to localhost:3000 in your web browser
+Then click [HERE](http://localhost:3000/) in your web browser
 
 ## Heroku View
 
