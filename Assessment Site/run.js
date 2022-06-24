@@ -10,5 +10,5 @@ app.use(express.static('assets'))
 app.use("/", index_router)
 
 app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`)
+    console.log(`In a browser: Go to localhost:${PORT}`)
 })

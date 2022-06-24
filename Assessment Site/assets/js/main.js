@@ -69,7 +69,7 @@ let tips = ["Hello", "this", "is", "a", "test", "Not updating correctly"]
 
 setTimeout(() => {
     for(let i = 0; i < tips.length; i++){
-        setTimeout(() => {updateTips(i)}, 10000)
+        setTimeout(() => {updateTips(i)}, 1000)
     }
 }, 1);
 
