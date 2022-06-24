@@ -63,6 +63,7 @@ section:not(:first-child){
 img{
     transition: 0.1s linear;
 }
+
 img:hover{
     transform: scale(0.98);
 }
@@ -88,7 +89,7 @@ button:hover{
     background: var(--dark-back-colour);
 }
 
-button:hover:last-child{
+button:hover:last-child{ /*moves only the arrow in the button*/
     padding-right: 12px;
 }
 

@@ -9,7 +9,12 @@ let sunImages = document.querySelectorAll(".sunglasses")
 let artImages = document.querySelectorAll(".art")
 let promisesImages = document.querySelectorAll(".promise")
 
-//Fetch the chosen images and populate array
+/*
+Fetch the chosen images and populate array
+
+Input: Passes in chosen URL path constant and what array needs filled
+Output: image array is populated with unique images
+*/
 let getImages = async (path, imageArray) => {
     let newImages = []
 
@@ -35,7 +40,12 @@ let getImages = async (path, imageArray) => {
     fillImages(imageArray, newImages)
 }
 
-//Replace the URLS of the images
+/*
+Replace the URLs of the Images
+
+Input: Array to fill and array of selected images
+Output: Source of all images (in arr.) changes
+*/
 let fillImages = (imageArray, newImages) => {
     for(let i = 0; i < newImages.length; i++){
         imageArray[i].src = `${newImages[i]}`
@@ -47,17 +57,21 @@ getImages(SUNGLASSES_PATH, sunImages);
 getImages(ART_PATH, artImages);
 getImages(PROMISES_PATH, promisesImages)
 
+/*
+--DOES NOT WORK CORRECTLY--
+Update the tips at the top of the page
 
-//Updates the tips at the top of the page
-//NOT WORKING CORRECTLY - Only updates to last array item
+Input: Passes in new text to change
+Output: Text is changed to the new text every 10s
+*/
 let tipsText = document.querySelector(".tipsWords p")
 let tips = ["Hello", "this", "is", "a", "test", "Not updating correctly"]
 
 setTimeout(() => {
     for(let i = 0; i < tips.length; i++){
-        setTimeout(() => {updateTips(i)}, 100)
+        setTimeout(() => {updateTips(i)}, 10000)
     }
-}, 100);
+}, 1);
 
 let updateTips = (index) => {
     tipsText.innerHTML = `🌐 ${tips[index]}`
