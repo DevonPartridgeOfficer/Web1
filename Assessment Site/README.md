@@ -17,7 +17,7 @@ From here navigate to localhost:3000 in your web browser
 
 ## Heroku View
 
-Visit [HERE](https://cubitts-site-devon.herokuapp.com/) to view the deployed site
+[CLICK HERE](https://cubitts-site-devon.herokuapp.com/) to view the deployed site
 
 ## Known Bugs and Issues
 - Image zoom on hover changes the size of the image
