@@ -1,0 +1,9 @@
+{
+  "main": "run .js",
+  "scripts": {
+    "start" : "node run.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
