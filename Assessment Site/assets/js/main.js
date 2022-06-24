@@ -40,6 +40,7 @@ let fillImages = (imageArray, newImages) => {
     for(let i = 0; i < newImages.length; i++){
         imageArray[i].src = `${newImages[i]}`
     }
+
 }
 
 getImages(SUNGLASSES_PATH, sunImages);
