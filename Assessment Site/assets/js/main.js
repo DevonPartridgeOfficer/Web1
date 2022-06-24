@@ -48,31 +48,17 @@ getImages(ART_PATH, artImages);
 getImages(PROMISES_PATH, promisesImages)
 
 
+//Updates the tips at the top of the page
+//NOT WORKING CORRECTLY - Only updates to last array item
+let tipsText = document.querySelector(".tipsWords p")
+let tips = ["Hello", "this", "is", "a", "test", "Not updating correctly"]
 
-/*
-let tipsText = document.querySelector(".tipsWords")
-
-let tips = [
-    "Hello",
-    "this",
-    "is",
-    "a",
-    "test",
-    "to",
-    "check",
-    "if",
-    "tips",
-    "update"
-]
-
-
-let updateTips = (tip) => {
-    tipsText = tip
-}
-
-let update = () => {
+setTimeout(() => {
     for(let i = 0; i < tips.length; i++){
-        updateTips(tips[i])
+        setTimeout(() => {updateTips(i)}, 100)
     }
+}, 100);
+
+let updateTips = (index) => {
+    tipsText.innerHTML = `🌐 ${tips[index]}`
 }
-*/
