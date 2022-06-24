@@ -2,22 +2,25 @@
 By Devon Partridge-Officer
 
 ## About
-This project aims to replicate the function and look of the website Cubitts.com.
+This project aims to replicate the function and look of the website Cubitts.com
+
 ![image](https://pbs.twimg.com/media/FHyIxdlWQAQONkT.jpg)
 
 
-## Local View
+## Viewing locally using Node.js
 
-Using node.js
+Using node.js at a prompt
 
 ```bash
 npm start
 ```
-Then click [HERE](http://localhost:3000/) in your web browser
+Then click [here](http://localhost:3000/) to view the page
 
-## Heroku View
 
-[CLICK HERE](https://cubitts-site-devon.herokuapp.com/) to view the deployed site
+## Viewing Deployed site on Heroku
+
+[Click here](https://cubitts-site-devon.herokuapp.com/) to view the deployed site
+
 
 ## Known Bugs and Issues
 - Image zoom on hover changes the size of the image
@@ -28,6 +31,7 @@ Then click [HERE](http://localhost:3000/) in your web browser
 - Bottom border on header is too wide
 - No dropmenu for currency in footer
 - Tips at top of page not updating correctly with JavaScript
+
 
 ## Issues Resolved
 
